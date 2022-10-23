@@ -3,7 +3,7 @@ dotenv.config()
 
 import mongoose from 'mongoose'
 
-const DB = process.env.DATABASE
+const DB = 'mongodb+srv://asterfinde:G.t.A-281295@cluster0-moocfi.kyguul4.mongodb.net/phonebookApp?retryWrites=true&w=majority'
 // const DB = process.env.DATABASE.replace( '<PASSWORD>', process.env.DATABASE_PASSWORD )
 console.log('=======> connecting to mongoDB...')
 
