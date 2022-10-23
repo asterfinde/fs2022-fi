@@ -1,6 +1,6 @@
-# fly.toml file generated for phonebook-asterfinde on 2022-10-22T11:00:23-05:00
+# fly.toml file generated for restless-cherry-853 on 2022-10-23T15:37:51-05:00
 
-app = "phonebook-asterfinde"
+app = "restless-cherry-853"
 kill_signal = "SIGINT"
 kill_timeout = 5
 processes = []
