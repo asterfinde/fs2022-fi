@@ -8,10 +8,7 @@ const DB_COLLECTION = process.env.DB_COLLECTION
 
 let DB = process.env.MONGODB_URI.replace( '<COLLECTION>', DB_COLLECTION )
 DB = DB.replace( '<PASSWORD>', DB_PASSWORD )
-console.log(DB)
-
-// works!
-// const DB = 'mongodb+srv://asterfinde:G.t.A-281295@cluster0-moocfi.kyguul4.mongodb.net/phonebookApp?retryWrites=true&w=majority'
+// console.log(DB)
 
 console.log('=======> connecting to mongoDB...')
 

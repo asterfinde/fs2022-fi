@@ -22,6 +22,7 @@ const PORT = process.env.PORT || 3001
 
 const app = express()
 
+// correct order!!
 app.use( express.static('build') )	// to make express show static content
 
 app.use( express.json() )
