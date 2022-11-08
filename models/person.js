@@ -15,7 +15,7 @@ DB = DB.replace( '<PASSWORD>', DB_PASSWORD )
 console.log('===========> connecting to mongoDB...')
 
 mongoose.connect( DB, { useNewUrlParser: true, useUnifiedTopology: true })
-    .then(result => {
+    .then( () => {
         console.log('===========> connected to MongoDB 🚀')
     })
 

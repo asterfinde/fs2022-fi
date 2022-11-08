@@ -96,7 +96,7 @@ app.get('/api/persons/:id', async ( request, response, next ) => {
                 response.json( person )
 
             } else {
-                response.status(404).send(`Current person: ${id} doesn't match`).end() 
+                response.status(404).send(`Current person: ${request.params.id} doesn't match`).end() 
             }
         })
     }
@@ -137,7 +137,7 @@ app.put('/api/persons/:id', async ( request, response, next ) => {
 app.delete('/api/persons/:id', async ( request, response, next ) => {
     try {
         await Person.findByIdAndRemove( request.params.id )
-        .then(result => {
+        .then( () => {
             response.status( 204 ).end()
         })
     }

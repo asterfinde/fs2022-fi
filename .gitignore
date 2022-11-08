@@ -1,3 +1,4 @@
 node_modules
 .env
 index copy.js
+fly.toml
